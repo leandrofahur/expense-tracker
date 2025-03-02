@@ -1,5 +1,6 @@
 import { Meta, StoryObj } from "@storybook/react";
 import { Button } from "./button";
+import { Hoodie, Trash } from "@phosphor-icons/react";
 
 const meta: Meta<typeof Button> = {
   component: Button,
@@ -22,7 +23,7 @@ const meta: Meta<typeof Button> = {
     variant: {
       control: {
         type: "select",
-        options: ["default", "error", "success"],
+        options: ["default", "error", "success", "ghost"],
         defaultValue: "default",
       },
     },
@@ -57,5 +58,32 @@ export const Success: Story = {
   args: {
     children: "Save",
     variant: "success",
+  },
+};
+
+export const Ghost: Story = {
+  args: {
+    children: "Ghost",
+    variant: "ghost",
+  },
+};
+
+export const Icon: Story = {
+  args: {
+    children: <Hoodie />,
+    variant: "ghost",
+    size: "icon",
+  },
+};
+
+export const IconWithLabel: Story = {
+  args: {
+    children: (
+      <div className="flex items-center gap-2">
+        <Trash />
+        <span>Delete</span>
+      </div>
+    ),
+    variant: "error",
   },
 };
