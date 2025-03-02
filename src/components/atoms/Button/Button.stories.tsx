@@ -22,14 +22,7 @@ const meta: Meta<typeof Button> = {
     variant: {
       control: {
         type: "select",
-        options: [
-          "default",
-          "secondary",
-          "destructive",
-          "outline",
-          "ghost",
-          "link",
-        ],
+        options: ["default", "error", "success"],
         defaultValue: "default",
       },
     },
@@ -50,5 +43,19 @@ type Story = StoryObj<typeof Button>;
 export const Default: Story = {
   args: {
     children: "Button",
+  },
+};
+
+export const Error: Story = {
+  args: {
+    children: "Cancel",
+    variant: "error",
+  },
+};
+
+export const Success: Story = {
+  args: {
+    children: "Save",
+    variant: "success",
   },
 };

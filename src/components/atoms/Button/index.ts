@@ -1,4 +1,7 @@
 import { Button } from "./button";
-export { Button };
+import { buttonVariants } from "./variants";
+import type { ButtonVariants } from "./Button.types";
 
-export { buttonVariants } from "./variants";
+export { Button };
+export { buttonVariants };
+export type { ButtonVariants };
