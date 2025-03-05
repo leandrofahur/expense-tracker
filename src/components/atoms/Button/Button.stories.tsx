@@ -1,5 +1,5 @@
 import { Meta, StoryObj } from "@storybook/react";
-import { Button } from "./button";
+import { Button } from "@/components/atoms/Button";
 import { Hoodie, Trash } from "@phosphor-icons/react";
 
 const meta: Meta<typeof Button> = {
