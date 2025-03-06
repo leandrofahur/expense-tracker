@@ -33,4 +33,4 @@ This project's purpose is to be an open-source inspiration for new developers. I
 
 ### LICENSE
 
-It's the good old MIT baby.
+It's the good old [MIT]("./LICENSE.MD") baby.
